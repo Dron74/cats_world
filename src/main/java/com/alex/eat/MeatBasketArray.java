@@ -3,7 +3,7 @@ package com.alex.eat;
 /**
  * Created by Студент on 25.05.2016.
  */
-public class MeatBasketArray {
+public class MeatBasketArray implements getWeight {
     private Meat[] meats;
     private int index;
     private int size;
@@ -57,7 +57,7 @@ public class MeatBasketArray {
             if (meat != null) {
                 sum = sum + meat.getWeight();
             }
-            return sum;
         }
+        return sum;
     }
 }
